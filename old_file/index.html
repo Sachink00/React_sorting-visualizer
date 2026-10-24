@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting_visualizer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+
+        <div class="canvas-container">
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+
+            <select id="algoSelect">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+
+            <button onclick="startSort()">Start Sorting</button>
+
+            <button class="generate-btn" onclick="generateArray()">Generate Array</button>
+        </div>
+    </div>
+
+    <script src="Sock.js"></script>
+    <script src="math.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
